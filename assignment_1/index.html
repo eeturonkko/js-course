@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bookstore Inventory</title>
+  </head>
+
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .add-new-book-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 15px;
+    }
+  </style>
+  <body class="container">
+    <h1>Bookstore Inventory Management</h1>
+    <div class="add-new-book-form">
+      <input type="text" id="title" placeholder="Book Title" />
+      <input type="text" id="author" placeholder="Author" />
+      <input type="text" id="category" placeholder="Category" />
+      <button onclick="addBook()">Add Book</button>
+    </div>
+    <div>
+      <input type="text" id="searchCategory" placeholder="Search by Category" />
+      <button onclick="searchBooks()">Search</button>
+    </div>
+    <div id="inventory"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
